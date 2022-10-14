@@ -1,0 +1,19 @@
+
+.home {
+    display: grid;
+    width:100%;
+
+}
+
+.home::-webkit-scrollbar{
+    display:none;
+}
+
+.home-header{
+    grid-row:1 /2 ;
+}
+
+.home-main{
+    grid-row:1 /2 ;
+    overflow: hidden;
+} 

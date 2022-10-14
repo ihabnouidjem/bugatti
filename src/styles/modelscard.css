@@ -1,0 +1,110 @@
+
+
+
+.modelcard{
+    width: min(calc(100% - 80px), 1000px);
+    margin-inline: auto;
+    margin-top: min(70vh , calc(80px + 40vw));
+    /* border:red dashed 1px; */
+    z-index: 1000;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 6px 1px var(--black);
+    background-color: white;
+    min-height:600px;
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+
+.modelcardcontainer{
+    width: calc(100% - 30px);
+}
+.modelcard > *{
+    margin-inline:30px;
+}
+
+
+.modelcard-car{
+    font-size: 35px;
+    font-weight:500;
+    letter-spacing: 2px;
+    height:35px;
+    overflow: hidden;
+}
+
+.modelcard-desc{
+    margin-block: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.modelcard-prop-container {
+    border-top: 1px solid var(--vanished-black);
+    width:100%;
+}
+
+.modelcard-prop{
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-block:2px;
+    font-weight: lighter;
+}
+
+.modelcard-val{
+    font-size: 18px;
+    /* letter-spacing: 2px; */
+    color:var(--vanished-black);
+    margin-block:2px;
+}
+
+.modelcard-price{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color:var(--vanished-black);
+    margin-block:2px;
+}
+
+.modelcard-long-val{
+    margin-left:15px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .modelcard{
+        width: min(calc(100% - 60px), 1000px);
+    }
+    .modelcard-car{
+        font-size: 30px;
+        height:30px;
+    }
+    .modelcard-desc{
+        margin-block: 12px;
+        font-size: 16px;
+    }
+    .modelcard-prop{
+        font-size: 22px;
+    }
+    
+    .modelcard-val{
+        font-size: 16px;
+    }
+    
+    .modelcard-long-val{
+        margin-left:12px;
+    }
+    .modelcard-price{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .modelcard{
+        width: min(calc(100% - 60px), 1000px);
+    }
+    .modelcard-car{
+        font-size: 25px;
+        height:25px;
+    }
+}

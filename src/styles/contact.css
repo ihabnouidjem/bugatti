@@ -1,0 +1,209 @@
+
+
+.contact-component{
+    /* min-height: 500px; */
+    width: min(1200px , calc(100% - 40px));
+    box-shadow: 0 0 6px 1px var(--black);
+    background-color: white;
+    margin-inline: auto;
+    margin-top: 70px;
+    border-radius: max(2vw , 10px);
+    color:var(--black);
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 30px;
+}
+
+.contact-component > *{
+    margin-inline:10px;
+}
+
+.contact-component-header{
+    height:40px;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: max(2vw , 10px);
+    margin-inline:4px;
+}
+
+.contact-container{
+    display:flex;
+    flex-direction: row;
+    height: calc(100% - 20px);
+    margin-bottom: 20px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height:max(100% , 500px);
+    width:50%;
+    border-right: 1px solid var(--black);
+}
+
+.contact-form-username , .contact-form-e-mail , .contact-form-subject {
+    width:calc(100% - 10%);
+    border:1px solid var(--black);
+    height:30px;
+    border-radius: 20px;
+    margin-inline:auto;
+    margin-block: 4px;
+    font-size: 20px;
+
+}
+
+.contact-form-username::placeholder , .contact-form-e-mail::placeholder , .contact-form-subject::placeholder {
+    font-size: 20px;
+}
+
+
+
+.contact-from-message{
+    width:calc(100% - 10%);
+    border:1px solid var(--black);
+    height: 150px ;
+    border-radius: 20px;
+    margin-inline:auto;
+    margin-block: 4px;
+    font-size: 20px;
+
+}
+
+.contact-from-message::placeholder{
+    font-size: 20px;
+    /* margin-top: 15px; */
+}
+
+.contact-from-btn{
+    height:30px;
+    width: 200px;
+    margin-inline: auto;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border:1px solid var(--vanished-black);
+    color: var(--vanished-black);
+    border-radius: 20px;
+    margin-top: 4px;
+
+}
+
+.contact-from-btn:hover{
+    border:1px solid var(--black);
+    color: var(--black);
+}
+
+.contact-info{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width:50%;
+
+}
+
+.contact-info-header {
+    font-size: 20px;
+    height:30px;
+    display:flex;
+    align-items: center;
+    margin-block:0;
+    margin-inline: 5%;
+}
+
+.contact-info-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:30px;
+    margin-left: 7%;
+    margin-right: 5%;
+
+}
+
+.contact-info-txt {
+    font-size: 18px;
+    height:30px;
+    display:flex;
+    align-items: center;
+    color:var(--vanished-black);
+    margin-block:0;
+    /* margin-inline: 7%; */
+}
+
+.contact-info-icon {
+    margin-left:auto;
+    height:30px;
+    aspect-ratio: 1 / 1;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px) {
+    .contact-component{
+        width: min(1200px , calc(100% - 20px));
+        margin-top: 60px;
+        box-shadow: 0 0 4px 1px var(--black);
+    }
+    .contact-component-header{
+        height:30px;
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-form{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        width:100%;
+        height:unset;
+        border-right: unset;
+        border-bottom: 1px solid var(--black);
+        
+    }
+    .contact-form-username , .contact-form-e-mail , .contact-form-subject {
+        width:calc(100% - 10px);
+    }
+    .contact-from-message{
+        width:calc(100% - 10px);
+    height: 80px ;
+
+    }
+    .contact-from-btn{
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+    
+    }
+    .contact-info{
+        width:100%;
+        height:unset;
+        border-left: none;
+        border-top: none;
+    }
+    .contact-info-header {
+        font-size: 20px;
+        height:30px;
+        display:flex;
+        align-items: center;
+        margin-block:0;
+        margin-inline: 0%;
+    }
+    
+    .contact-info-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        height:30px;
+        margin-left: 2%;
+        margin-right: 0%;
+    
+    }
+}
